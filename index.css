@@ -3,8 +3,8 @@
     --neutral-white:  hsl(0, 0%, 100%);
     --light-grey: hsl(217, 12%, 63%);
     --medium-grey: hsl(216, 12%, 54%);
-    --dark-blue: hsl(213, 19%, 18%);
-    --very-dark-blue: hsl(216, 12%, 8%);
+    --dark-blue: hsl(210, 19%, 18%);
+    --very-dark-blue: hsl(215, 20%, 16%);
     font-size: 15px;
 
 }
@@ -16,14 +16,14 @@
 }
 
 body {
-    background-color: var(--very-dark-blue);
+    background-color: black;
     font-family: Overpass, sans-serif;
 }
 
 .card {
     margin: 200px auto;
     width: 350px;
-    background-color: #081220;
+    background-color: var(--very-dark-blue);
     border-radius: 10px;
     padding: .5rem;
     aspect-ratio: 1 / 1
@@ -72,14 +72,11 @@ label {
     color: var(--light-grey);
 }
 
-label:first-of-type {
-    margin-left: 0;
-}
-
 
 label:hover {
     background-color: var(--light-grey);
     color: var(--neutral-white);
+    cursor: pointer;
 }
 
 input {
@@ -102,6 +99,7 @@ button {
 button:hover {
     background-color: var(--neutral-white);
     color: var(--primary-orange);
+    cursor: pointer;
 }
 
 .star_icon {
