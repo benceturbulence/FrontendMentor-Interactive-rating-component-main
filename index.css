@@ -1,0 +1,133 @@
+:root {
+    --primary-orange: hsl(25, 97%, 53%);
+    --neutral-white:  hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    font-size: 15px;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    font-family: Overpass, sans-serif;
+}
+
+.card {
+    margin: 200px auto;
+    width: 350px;
+    background-color: #081220;
+    border-radius: 10px;
+    padding: .5rem;
+    aspect-ratio: 1 / 1
+}
+
+.container {
+    margin: 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: var(--neutral-white);
+    margin: .8rem 0;
+
+}
+
+.description {
+    color: var(--light-grey);
+    font-size: 1rem;
+}
+
+label {
+    color: var(--medium-grey);
+}
+
+button {
+    background-color: var(--primary-orange);
+    color: var(--neutral-white);
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--dark-blue);
+    color: var(--light-grey);
+}
+
+label:first-of-type {
+    margin-left: 0;
+}
+
+
+label:hover {
+    background-color: var(--light-grey);
+    color: var(--neutral-white);
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    background-color: var(--primary-orange);
+    color: var(--neutral-white);
+}
+
+button {
+    border: none;
+    border-radius: 1.5rem;
+    width: 100%;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: var(--neutral-white);
+    color: var(--primary-orange);
+}
+
+.star_icon {
+    border-radius: 50%;
+    background-color: var(--dark-blue);
+    padding: .6rem;
+}
+
+.center {
+   text-align: center;
+}
+
+.rating_box {
+    background-color: var(--dark-blue);
+    color: var(--primary-orange);
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+    width: fit-content;
+    margin: 1rem auto;
+}
+
+.attribution {
+    text-align: center;
+    color: var(--neutral-white);
+}
+
+.attribution a {
+    color: yellowgreen;
+}
